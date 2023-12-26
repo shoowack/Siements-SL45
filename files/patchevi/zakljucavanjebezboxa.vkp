@@ -1,0 +1,3 @@
+;Eliminate "Keylocked" message box when locking the keypad
+;
+3AD2B4: DADB 0D01

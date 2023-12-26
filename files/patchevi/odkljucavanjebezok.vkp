@@ -1,0 +1,3 @@
+;Tastensperre aufheben wie beim S35
+3AF6F4: DAD66C2C DADAE2F6
+3B06E0: DC45 0D06

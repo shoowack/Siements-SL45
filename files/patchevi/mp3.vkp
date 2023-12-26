@@ -1,0 +1,13 @@
+;Doing something else while playing MP3
+;By applying this patch, we can do something else while playing MP3 files by pressing * button.
+;
+;Not all functions could be done perfectly paralelly with playing MP3. Almost all MMC function has different result from the normal/idle condition. Some of function could even turn the phone off...
+;
+3BA07A: EA2008A146F62000 2D4646F620002D5A 
+3BA082: EA2036A146F62100 46F621002D6346F6
+3BA08A: EA204EA1 13002D32
+3BA0EE: DC49A9C8 08610D19
+3BA0F2: C0C60861E0A7F6F6 D7403400F6F61E3E 
+3BA0FA: 0EFE4B77F2F60CFE DADBDC42EA00C2A3
+;
+;If you want to use another button, just modify address 0x3BA08A from 13 00 to another value (see button code list in the Sticky topic).
